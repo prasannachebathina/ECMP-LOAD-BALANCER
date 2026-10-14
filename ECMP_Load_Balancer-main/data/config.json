@@ -1,0 +1,20 @@
+{
+  "num_leaves": 4,
+  "num_spines": 3,
+  "hosts_per_leaf": 3,
+  "link_capacity_mbps": 10000,
+  "num_flows": 200,
+  "seed": 42,
+  "min_demand_mbps": 50,
+  "max_demand_mbps": 1500,
+  "failures": [
+    {
+      "type": "link",
+      "target": "L1-S1"
+    },
+    {
+      "type": "spine",
+      "target": "S2"
+    }
+  ]
+}

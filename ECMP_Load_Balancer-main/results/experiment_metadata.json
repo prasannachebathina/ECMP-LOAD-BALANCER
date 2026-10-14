@@ -1,0 +1,22 @@
+{
+  "project": "ECMP Load Distribution and Failure Recovery in a Leaf-Spine Fabric",
+  "simulation_only": true,
+  "hash_method": "SHA-256 of salt, flow id, source, destination, and seed; modulo available paths",
+  "traffic_seed": 42,
+  "topology": {
+    "num_leaves": 4,
+    "num_spines": 3,
+    "hosts_per_leaf": 3,
+    "link_capacity_mbps": 10000
+  },
+  "num_flows": 200,
+  "demand_range_mbps": [
+    50,
+    1500
+  ],
+  "recovery_metric": "wall-clock Python time to recompute all flow assignments; not real network convergence",
+  "scenarios": [
+    "link_failure_L1-S1",
+    "spine_failure_S2"
+  ]
+}

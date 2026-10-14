@@ -1,0 +1,4 @@
+mean_utilization_pct,min_utilization_pct,max_utilization_pct,utilization_stddev_pct,load_imbalance_max_over_mean,connected_flows,disconnected_flows,total_flows,scenario,failure_type,failure_target,affected_flows,rerouted_affected_flows,disconnected_affected_flows,recovery_time_ms,recovery_time_definition
+250.148918,177.18508,374.50073,51.055868,1.497111,200,0,200,baseline,none,,0,0,0,0.0,not applicable
+250.148918,0.0,515.33429,102.305146,2.06011,200,0,200,link_failure_L1-S1,link,L1-S1,35,35,0,188.2467,wall-clock time for simulator reassignment only
+250.148918,0.0,515.33429,136.390931,2.06011,200,0,200,spine_failure_S2,spine,S2,77,77,0,15.8447,wall-clock time for simulator reassignment only
